@@ -4,30 +4,30 @@ import svg3 from "./assets/green-3.svg?raw";
 import svg4 from "./assets/green-4.svg?raw";
 
 export const getInvolvedSection = {
-  title: "Get Involved",
-  subheading1_1: "Join Us ",
-  subheading1_2: "in Building a Sustainable Future",
+  title: "Kontakt aufnehmen",
+  subheading1_1: "Starten Sie jetzt ",
+  subheading1_2: "Ihr Heizungsprojekt",
   initiatives: [
     {
-      title: "Community Outreach",
+      title: "Kostenlose Erstberatung",
       description:
-        "Discover our community initiatives aimed at promoting awareness and education on sustainable living. Join us in creating a positive impact together.",
+        "Vereinbaren Sie einen Termin für eine persönliche Beratung. Wir analysieren Ihre Situation und entwickeln ein individuelles Konzept für Ihre neue Heizung.",
       visual: svg2,
     },
     {
-      title: "Green Events",
+      title: "Förderung & Finanzierung",
       description:
-        "Participate in our upcoming green events. From tree-planting drives to eco-friendly workshops, be a part of the movement towards a healthier planet.",
+        "Wir beraten Sie zu allen aktuellen Förderprogrammen (BEG, KfW) und helfen Ihnen, die maximale Förderung für Ihre neue Heizungsanlage zu erhalten.",
       visual: svg4,
     },
     {
-      title: "Partnerships for Sustainability",
+      title: "Vaillant Fachpartner",
       description:
-        "Explore our partnerships with organizations dedicated to environmental conservation. Learn how you can contribute to sustainable practices through collaboration.",
+        "Als zertifizierter Vaillant Fachpartner bieten wir Ihnen Qualitätsprodukte mit Herstellergarantie. Profitieren Sie von unserer Expertise und erstklassigem Service.",
       visual: svg3,
     },
   ],
   visual: "get-involved-section-image.jpg",
-  callToAction: "Take Action Today for a Greener Tomorrow",
-  button: "Join Our Initiatives",
+  callToAction: "Rufen Sie uns an oder schreiben Sie uns",
+  button: "Jetzt Kontakt aufnehmen",
 };

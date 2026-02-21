@@ -1,32 +1,32 @@
-import imgGrid from "./assets/inno-grid.webp";
-import imgSolar from "./assets/inno-panel.webp";
-import imgWind from "./assets/inno-wind.webp";
+import imgGrid from "./assets/hybrid.jpg";
+import imgSolar from "./assets/steuerung.jpg";
+import imgWind from "./assets/beratung.jpg";
 
 export const innovationsSection = {
-  title: "Latest Innovations",
-  subheading1_1: "Discover Our Cutting-edge",
-  subheading1_2: " Green Energy Technologies",
+  title: "Moderne Technik",
+  subheading1_1: "Zukunftssichere",
+  subheading1_2: " Heiztechnologien für Ihr Zuhause",
   innovations: [
     {
-      title: "Smart Grid Integration",
+      title: "Hybride Heizsysteme",
       description:
-        "Revolutionize energy distribution with our smart grid technology, optimizing efficiency, minimizing wastage, and adapting to demand fluctuations. Stay connected with innovative solutions for a sustainable, cost-effective energy ecosystem. Embrace the future with our cutting-edge smart grid integration, enhancing reliability and paving the way for efficiency and sustainability.",
+        "Kombinieren Sie das Beste aus zwei Welten: Eine Wärmepumpe für den Großteil des Jahres, ergänzt durch einen Gas-Brennwertkessel an besonders kalten Tagen. So heizen Sie immer mit dem wirtschaftlichsten Energieträger und senken Ihre Kosten nachhaltig.",
       visual: imgGrid,
     },
     {
-      title: "Advanced Solar Panel Design",
+      title: "Intelligente Heizungssteuerung",
       description:
-        "Boost solar efficiency with our state-of-the-art solar panel designs. Our innovative technologies capture more sunlight, ensuring maximum energy production for your home or business. Experience enhanced sustainability and increased energy output with our advanced solar solutions.",
+        "Mit moderner Regelungstechnik von Vaillant steuern Sie Ihre Heizung bequem per App – von überall. Automatische Anpassung an Wetter, Tageszeit und Ihre Gewohnheiten sorgen für optimalen Komfort bei minimalen Kosten.",
       visual: imgSolar,
     },
     {
-      title: "Next-gen Wind Turbines",
+      title: "Energieberatung nach GEG",
       description:
-        "Transform your wind energy experience with our next-generation wind turbines. Our sleek design, enhanced efficiency, and minimal environmental impact underscore our commitment to innovation. Elevate your sustainable energy journey with cutting-edge wind solutions that prioritize both performance and environmental responsibility.",
+        "Als geprüfter Gebäudeenergieberater (HWK) analysieren wir Ihr Gebäude und erstellen individuelle Sanierungskonzepte. Wir beraten Sie zu Fördermöglichkeiten und begleiten Sie auf dem Weg zur energieeffizienten Immobilie.",
       visual: imgWind,
     },
   ],
   visual: "innovations-section-image.jpg",
-  callToAction: "Explore the Future of Green Energy with [Company Name]",
-  button: "Learn More",
+  callToAction: "Lassen Sie sich von Scheeren Tec beraten",
+  button: "Mehr erfahren",
 };

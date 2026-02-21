@@ -3,33 +3,33 @@ import img2 from "./assets/person2.png";
 import img3 from "./assets/person3.png";
 
 export const testimonialsSection = {
-  title: "What Our Customers Say",
-  subheading1_1: "Hear from Those",
-  subheading1_2: " Who Have Embraced Sustainable Living",
+  title: "Das sagen unsere Kunden",
+  subheading1_1: "Erfahrungen unserer",
+  subheading1_2: " zufriedenen Kunden aus der Region",
   testimonials: [
     {
-      name: "Emily Johnson",
+      name: "Familie Weber",
       visual: img1,
-      occupation: "Homeowner",
+      occupation: "Eigenheimbesitzer, Heinsberg",
       quote:
-        "Switching to [Company Name] was the best decision I made. Our home is now powered by clean energy, and I feel great knowing I'm contributing to a healthier planet.",
+        "Herr Scheeren hat uns ausführlich beraten und eine Wärmepumpe empfohlen, die perfekt zu unserem Haus passt. Die Installation lief reibungslos und wir sparen jetzt deutlich bei den Heizkosten. Top Service!",
     },
     {
-      name: "Carlos Rodriguez",
+      name: "Thomas Müller",
       visual: img2,
-      occupation: "Business Owner",
+      occupation: "Geschäftsführer, Heinsberg",
       quote:
-        "As a business owner, sustainability is crucial. [Company Name] provided us with a seamless transition to green energy, and we've seen a positive impact on both the environment and our operating costs.",
+        "Als Unternehmer schätze ich Zuverlässigkeit. Scheeren Tec hat unsere komplette Heizungsanlage modernisiert – termingerecht, sauber und professionell. Der Wartungsservice ist ebenfalls erstklassig.",
     },
     {
-      name: "Sophie Chen",
+      name: "Andrea Schmidt",
       visual: img3,
-      occupation: "Environmental Advocate",
+      occupation: "Hauseigentümerin, Oberbruch",
       quote:
-        "I'm passionate about the environment, and [Company Name] aligns perfectly with my values. Their commitment to renewable energy and reducing carbon footprint is commendable.",
+        "Von der Energieberatung bis zur Solarthermie-Installation – alles aus einer Hand. Herr Scheeren hat uns die Fördermöglichkeiten erklärt und alles perfekt koordiniert. Absolute Empfehlung!",
     },
   ],
   visual: "customer-testimonials-image.jpg",
-  callToAction: "Join Our Growing Community of Satisfied Customers",
-  button: "Get Started",
+  callToAction: "Werden auch Sie Teil unserer zufriedenen Kundenfamilie",
+  button: "Kontakt aufnehmen",
 };

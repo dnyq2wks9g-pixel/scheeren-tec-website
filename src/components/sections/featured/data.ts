@@ -1,34 +1,34 @@
-import img1 from "./assets/solar-person.png";
-import img2 from "./assets/wind-person.png";
-import img3 from "./assets/amazonas2.png";
+import img1 from "./assets/projekt-neubau.jpg";
+import img2 from "./assets/projekt-sanierung.jpg";
+import img3 from "./assets/projekt-gewerbe.jpg";
 
 export const projectsSection = {
-  title: "Featured Projects",
-  subheading1_1: "Explore Our Successful ",
-  subheading1_2: "Green Energy Endeavors",
+  title: "Referenzprojekte",
+  subheading1_1: "Ausgewählte Projekte ",
+  subheading1_2: "aus dem Kreis Heinsberg",
   projects: [
     {
-      title: "Solar-Powered Community",
+      title: "Wärmepumpe im Neubau",
       description:
-        "Empowering a community with sustainable solar energy solutions. Learn how [Company Name] brought clean and affordable electricity to homes, schools, and businesses.",
-      location: "Los Angeles, California, USA",
+        "Installation einer Luft-Wasser-Wärmepumpe mit Fußbodenheizung in einem Einfamilienhaus. Inklusive Energieberatung, Förderanträge und Inbetriebnahme – alles aus einer Hand.",
+      location: "Heinsberg",
       visual: img1,
     },
     {
-      title: "Wind Farm Innovation",
+      title: "Heizungssanierung Altbau",
       description:
-        "Revolutionizing wind energy with our innovative wind farm. Discover how [Company Name] is harnessing the power of the wind to create a greener and more sustainable future.",
-      location: "Scottish Highlands, United Kingdom",
+        "Austausch einer 25 Jahre alten Ölheizung gegen moderne Gas-Brennwerttechnik mit Solarthermie-Unterstützung. Ergebnis: 40% weniger Heizkosten und deutlich mehr Komfort.",
+      location: "Oberbruch",
       visual: img2,
     },
     {
-      title: "Hydropower Plant Success",
+      title: "Hybrid-Lösung Gewerbeobjekt",
       description:
-        "A journey into our hydropower success story. Explore how [Company Name] transforms the energy of flowing water into a reliable and eco-friendly power source.",
-      location: "Amazon Rainforest, South America",
+        "Hybrides Heizsystem für eine Gewerbeimmobilie: Wärmepumpe kombiniert mit Gas-Brennwert für Spitzenlasten. Intelligente Regelung sorgt für optimale Effizienz.",
+      location: "Erkelenz",
       visual: img3,
     },
   ],
-  callToAction: "Embark on a Green Energy Journey with [Company Name]",
-  button: "View More Projects",
+  callToAction: "Starten Sie Ihr Heizungsprojekt mit Scheeren Tec",
+  button: "Projekt anfragen",
 };

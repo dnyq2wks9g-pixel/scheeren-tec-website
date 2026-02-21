@@ -1,59 +1,57 @@
-import img1 from "./assets/solar3.png";
-import img2 from "./assets/wind.png";
-// TODO
-import img3 from "./assets/hydro.png";
-import img4 from "./assets/storage.png";
-// TODO
-import img5 from "./assets/smart-grid.png";
-import img6 from "./assets/green.png";
+import img1 from "./assets/waermepumpe.jpg";
+import img2 from "./assets/gasheizung.jpg";
+import img3 from "./assets/oelheizung.jpg";
+import img4 from "./assets/solarthermie.jpg";
+import img5 from "./assets/brennstoffzelle.jpg";
+import img6 from "./assets/wartung.jpg";
 
 export const servicesSectionData = {
-  title: "Our Sustainable Energy Solutions",
+  title: "Unsere Leistungen",
   subheading: {
-    text1_1: "Experience a Revolution in Energy Solutions - ",
-    text1_2: "Embrace Innovation, Embrace Sustainability.",
+    text1_1: "Innovative Heizungslösungen für Ihr Zuhause – ",
+    text1_2: "Effizienz trifft Wohlbefinden.",
     text2:
-      "We're here to Empower Your Life and Spaces with Clean, Renewable Energy, Paving the Way for a Brighter and Greener Tomorrow.",
+      "Wir planen, installieren und warten Ihre Heizungsanlage. Von der ersten Beratung bis zum Rundum-Service – alles aus einer Hand.",
   },
   services: [
     {
-      title: "Solar Power Solutions",
+      title: "Wärmepumpen",
       briefDescription:
-        "Harness the power of the sun with our state-of-the-art solar panels. Generate clean energy for your home or business and reduce your carbon footprint.",
+        "Eine Wärmepumpe macht Umweltwärme wohnlich. Nutzen Sie die kostenlose Energie aus Luft, Erde oder Wasser für Ihre Heizung und profitieren Sie von staatlichen Förderungen.",
       visual: img1,
     },
     {
-      title: "Wind Energy Harvesting",
+      title: "Gas-Brennwert",
       briefDescription:
-        "Embrace the power of the wind. Our wind energy solutions provide a sustainable and efficient way to generate electricity, ensuring a greener future.",
+        "Moderne Gas-Brennwerttechnik nutzt die Energie optimal aus und spart Heizkosten bei gleichzeitig hohem Wärmekomfort. Effizient und zuverlässig.",
       visual: img2,
     },
     {
-      title: "Hydropower Systems",
+      title: "Öl-Brennwert",
       briefDescription:
-        "Flow with nature. Our hydropower systems harness the energy of flowing water, delivering reliable and eco-friendly electricity to your doorstep.",
+        "Mehr Wärme aus jedem Tropfen Heizöl. Öl-Brennwerttechnik von Vaillant bietet modernste Technik für bestehende Ölheizungssysteme.",
       visual: img3,
     },
     {
-      title: "Energy Storage Solutions",
+      title: "Solarthermie",
       briefDescription:
-        "Store excess energy efficiently. Our cutting-edge energy storage solutions ensure uninterrupted power supply, even during cloudy days or low-wind periods.",
+        "Energie frei Haus: Mit Solarkollektoren können Sie Heizkosten sparen und die Umwelt schonen. Wir planen und installieren Ihre Solaranlage.",
       visual: img4,
     },
     {
-      title: "Smart Grid Technology",
+      title: "Brennstoffzellen",
       briefDescription:
-        "Navigate the future with our smart grid technology. Optimize energy distribution, monitor consumption, and contribute to a more sustainable and efficient energy ecosystem.",
+        "Innovative Brennstoffzellentechnologie erzeugt gleichzeitig Strom und Wärme – hocheffizient und zukunftssicher. Die Heizung der Zukunft.",
       visual: img5,
     },
     {
-      title: "Energy-efficient Lighting",
+      title: "Wartung & Service",
       briefDescription:
-        "Illuminate your space responsibly. Our energy-efficient lighting solutions provide bright, sustainable, and cost-effective illumination for homes and businesses.",
+        "Zuverlässiger Wartungs-, Service- und Reparaturservice. Regelmäßige Wartung verlängert die Lebensdauer Ihrer Anlage und spart Energie.",
       visual: img6,
     },
   ],
   callToAction:
-    "Discover the Future of Green Energy. Choose Your Sustainable Solution Today!",
-  buttonText: "Explore More",
+    "Entdecken Sie die Heizungslösung, die zu Ihnen passt. Lassen Sie sich jetzt beraten!",
+  buttonText: "Beratung anfragen",
 };
