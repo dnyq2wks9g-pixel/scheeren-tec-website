@@ -99,3 +99,26 @@ const navItems = [
   </nav>
   <!-- </Container> -->
 </header>
+
+<script>
+  const toggleNav = document.querySelector("[data-toggle-nav]");
+  const navbar = document.querySelector("[data-navbar]");
+  const overlay = document.querySelector("[data-nav-overlay]");
+
+  if (toggleNav && navbar && overlay) {
+    toggleNav.addEventListener("click", () => {
+      const isOpen = toggleNav.getAttribute("data-open-nav") === "true";
+      toggleNav.setAttribute("data-open-nav", isOpen ? "false" : "true");
+      navbar.classList.toggle("h-0");
+      navbar.classList.toggle("h-auto");
+      overlay.classList.toggle("hidden");
+    });
+
+    overlay.addEventListener("click", () => {
+      toggleNav.setAttribute("data-open-nav", "false");
+      navbar.classList.add("h-0");
+      navbar.classList.remove("h-auto");
+      overlay.classList.add("hidden");
+    });
+  }
+</script>

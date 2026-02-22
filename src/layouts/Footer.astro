@@ -9,7 +9,7 @@ const footerLeistungen = [
   { itemText: "Gas-Brennwert", itemLink: "#services" },
   { itemText: "Solarthermie", itemLink: "#services" },
   { itemText: "Brennstoffzellen", itemLink: "#services" },
-  { itemText: "Wartung & Service", itemLink: "#services" },
+  { itemText: "Sanitär & Bad", itemLink: "#services" },
 ];
 
 const footerKontakt = [
@@ -77,3 +77,10 @@ const footerRechtliches = [
     </div>
   </footer>
 </div>
+
+<script>
+  const year = document.getElementById("year");
+  if (year) {
+    year.innerText = new Date().getFullYear().toString();
+  }
+</script>

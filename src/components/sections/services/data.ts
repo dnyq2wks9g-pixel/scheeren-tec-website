@@ -8,16 +8,16 @@ import img6 from "./assets/wartung.jpg";
 export const servicesSectionData = {
   title: "Unsere Leistungen",
   subheading: {
-    text1_1: "Innovative Heizungslösungen für Ihr Zuhause – ",
-    text1_2: "Effizienz trifft Wohlbefinden.",
+    text1_1: "Höchster Komfort, maximale Effizienz und Umweltverträglichkeit – ",
+    text1_2: "zeitgemäße Heizungs- und Warmwassersysteme.",
     text2:
-      "Wir planen, installieren und warten Ihre Heizungsanlage. Von der ersten Beratung bis zum Rundum-Service – alles aus einer Hand.",
+      "Mit unserem Partner Vaillant bieten wir Ihnen moderne technische Lösungen. Dabei legen wir ebenso großen Wert auf eine individuelle Planung wie auf eine termintreue und handwerklich präzise Ausführung.",
   },
   services: [
     {
       title: "Wärmepumpen",
       briefDescription:
-        "Eine Wärmepumpe macht Umweltwärme wohnlich. Nutzen Sie die kostenlose Energie aus Luft, Erde oder Wasser für Ihre Heizung und profitieren Sie von staatlichen Förderungen.",
+        "Nutzen Sie die kostenlose Umweltenergie aus Luft, Erde oder Wasser. Wir planen und installieren Ihre effiziente Wärmepumpenanlage für nachhaltige Wärme.",
       visual: img1,
     },
     {
@@ -35,7 +35,7 @@ export const servicesSectionData = {
     {
       title: "Solarthermie",
       briefDescription:
-        "Energie frei Haus: Mit Solarkollektoren können Sie Heizkosten sparen und die Umwelt schonen. Wir planen und installieren Ihre Solaranlage.",
+        "Energie frei Haus: Mit Solarkollektoren können Sie Heizkosten sparen und die Umwelt schonen. Wir integrieren Solarthermie perfekt in Ihr System.",
       visual: img4,
     },
     {
@@ -45,9 +45,9 @@ export const servicesSectionData = {
       visual: img5,
     },
     {
-      title: "Wartung & Service",
+      title: "Sanitär & Bad",
       briefDescription:
-        "Zuverlässiger Wartungs-, Service- und Reparaturservice. Regelmäßige Wartung verlängert die Lebensdauer Ihrer Anlage und spart Energie.",
+        "Von der kleinen Reparatur bis zur kompletten Badmodernisierung. Wir gestalten Ihr Wohlfühlbad mit handwerklicher Präzision.",
       visual: img6,
     },
   ],

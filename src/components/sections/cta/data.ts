@@ -9,9 +9,9 @@ export const getInvolvedSection = {
   subheading1_2: "Ihr Heizungsprojekt",
   initiatives: [
     {
-      title: "Kostenlose Erstberatung",
+      title: "Persönliche Beratung",
       description:
-        "Vereinbaren Sie einen Termin für eine persönliche Beratung. Wir analysieren Ihre Situation und entwickeln ein individuelles Konzept für Ihre neue Heizung.",
+        "Vereinbaren Sie einen Termin für eine ausführliche Beratung. Wir nehmen uns Zeit für Ihre Vorstellungen und entwickeln ein passendes Gesamtkonzept.",
       visual: svg2,
     },
     {

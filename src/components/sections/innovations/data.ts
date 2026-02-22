@@ -10,19 +10,19 @@ export const innovationsSection = {
     {
       title: "Hybride Heizsysteme",
       description:
-        "Kombinieren Sie das Beste aus zwei Welten: Eine Wärmepumpe für den Großteil des Jahres, ergänzt durch einen Gas-Brennwertkessel an besonders kalten Tagen. So heizen Sie immer mit dem wirtschaftlichsten Energieträger und senken Ihre Kosten nachhaltig.",
+        "Kombinieren Sie das Beste aus zwei Welten: Eine Wärmepumpe für den Großteil des Jahres, ergänzt durch einen Gas-Brennwertkessel an besonders kalten Tagen. So heizen Sie immer mit dem wirtschaftlichsten Energieträger.",
       visual: imgGrid,
     },
     {
       title: "Intelligente Heizungssteuerung",
       description:
-        "Mit moderner Regelungstechnik von Vaillant steuern Sie Ihre Heizung bequem per App – von überall. Automatische Anpassung an Wetter, Tageszeit und Ihre Gewohnheiten sorgen für optimalen Komfort bei minimalen Kosten.",
+        "Mit moderner Regelungstechnik von Vaillant steuern Sie Ihre Heizung bequem per App – von überall. Automatische Anpassung an Wetter und Ihre Gewohnheiten sorgen für optimalen Komfort.",
       visual: imgSolar,
     },
     {
       title: "Energieberatung nach GEG",
       description:
-        "Als geprüfter Gebäudeenergieberater (HWK) analysieren wir Ihr Gebäude und erstellen individuelle Sanierungskonzepte. Wir beraten Sie zu Fördermöglichkeiten und begleiten Sie auf dem Weg zur energieeffizienten Immobilie.",
+        "Als geprüfter Gebäudeenergieberater (HWK) analysieren wir Ihr Gebäude und erstellen individuelle Sanierungskonzepte. Wir beraten Sie zu Fördermöglichkeiten und begleiten Sie zur energieeffizienten Immobilie.",
       visual: imgWind,
     },
   ],
