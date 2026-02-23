@@ -7,12 +7,16 @@ export const headerData = {
       href: getPermalink('/#leistungen'),
     },
     {
-      text: 'So funktioniert\'s',
-      href: getPermalink('/#ablauf'),
-    },
-    {
       text: 'Über uns',
       href: getPermalink('/#ueber-uns'),
+    },
+    {
+      text: 'Warum wir',
+      href: getPermalink('/#warum-wir'),
+    },
+    {
+      text: 'Ablauf',
+      href: getPermalink('/#ablauf'),
     },
     {
       text: 'FAQ',
@@ -30,7 +34,7 @@ export const footerData = {
         { text: 'Wärmepumpen', href: '/#leistungen' },
         { text: 'Gas-Brennwert', href: '/#leistungen' },
         { text: 'Solarthermie', href: '/#leistungen' },
-        { text: 'Brennstoffzellen', href: '/#leistungen' },
+        { text: 'Sanitär', href: '/#leistungen' },
         { text: 'Wartung & Service', href: '/#leistungen' },
       ],
     },
@@ -67,6 +71,6 @@ export const footerData = {
     { ariaLabel: 'E-Mail', icon: 'tabler:mail', href: 'mailto:info@scheeren-tec.de' },
   ],
   footNote: `
-    © 2024 Scheeren Tec GmbH · HRB 24600 – AG Aachen · Vaillant Fachpartner · Geprüfter Gebäudeenergieberater (HWK)
+    © 2026 Scheeren Tec GmbH · HRB 24600 – AG Aachen · Vaillant Fachpartner · Geprüfter Gebäudeenergieberater (HWK)
   `,
 };

@@ -18,15 +18,28 @@ export default {
         serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
         heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
       },
-
       animation: {
         fade: 'fadeInUp 1s both',
+        'fade-in': 'fadeIn 0.6s ease-out both',
+        'slide-up': 'slideUp 0.6s ease-out both',
+        'scroll-indicator': 'scrollBounce 2s ease-in-out infinite',
       },
-
       keyframes: {
         fadeInUp: {
           '0%': { opacity: 0, transform: 'translateY(2rem)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        slideUp: {
+          '0%': { opacity: 0, transform: 'translateY(1.5rem)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        scrollBounce: {
+          '0%, 100%': { transform: 'translateY(0)', opacity: 1 },
+          '50%': { transform: 'translateY(8px)', opacity: 0.5 },
         },
       },
     },

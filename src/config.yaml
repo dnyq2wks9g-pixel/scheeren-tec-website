@@ -7,9 +7,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Scheeren Tec GmbH – Heizungsanlagen Heinsberg
+    default: Scheeren Tec GmbH – Heizungstechnik Heinsberg
     template: '%s — Scheeren Tec GmbH'
-  description: 'Ihr Spezialist für innovative Heizungsanlagen im Kreis Heinsberg. Wärmepumpen, Gas-Brennwert, Solarthermie, Wartung & Service. Vaillant Fachpartner.'
+  description: 'Heizungstechnik. Modern gedacht. Wärmepumpen, Heizungen & Solar im Kreis Heinsberg – seit 2016. Vaillant Fachpartner & Gebäudeenergieberater HWK.'
   robots:
     index: true
     follow: true
@@ -27,40 +27,40 @@ i18n:
 
 apps:
   blog:
-    isEnabled: true
+    isEnabled: false
     postsPerPage: 6
 
     post:
-      isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      isEnabled: false
+      permalink: '/%slug%'
       robots:
         index: true
 
     list:
-      isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      isEnabled: false
+      pathname: 'blog'
       robots:
         index: true
 
     category:
-      isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      isEnabled: false
+      pathname: 'category'
       robots:
         index: true
 
     tag:
-      isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      isEnabled: false
+      pathname: 'tag'
       robots:
         index: false
 
-    isRelatedPostsEnabled: true
+    isRelatedPostsEnabled: false
     relatedPostsCount: 4
 
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: null
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'dark:only'
