@@ -28,6 +28,6 @@ export const getInvolvedSection = {
     },
   ],
   visual: "get-involved-section-image.jpg",
-  callToAction: "Rufen Sie uns an oder schreiben Sie uns",
+  callToAction: "Schreiben Sie uns – wir melden uns schnellstmöglich bei Ihnen!",
   button: "Jetzt Kontakt aufnehmen",
 };
