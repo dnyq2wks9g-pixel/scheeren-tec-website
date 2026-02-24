@@ -1,6 +1,4 @@
 ---
-import Button from "../../../shared/Button.astro";
-
 export interface Props {
   className?: string;
 }
@@ -8,60 +6,122 @@ export interface Props {
 const { className = "" } = Astro.props;
 ---
 
-<div class=`mt-10 mb-5 w-full flex max-w-md mx-auto lg:mx-0 ${className}`>
-  <div class="flex sm:flex-row flex-col gap-5 w-full">
-    <form
-      action="#"
-      class="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-heading-3 shadow-lg shadow-box-shadow
-        border border-box-border bg-box-bg rounded-full ease-linear focus-within:bg-body focus-within:border-primary"
-    >
-      <span class="min-w-max pr-2 border-r border-box-border">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-5 h-5"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"
-          ></path>
-        </svg>
-      </span>
+<div class={`mt-10 mb-5 w-full max-w-2xl mx-auto ${className}`}>
+  <form
+    action="#"
+    id="contact-form"
+    class="w-full p-6 md:p-8 rounded-2xl shadow-lg shadow-box-shadow border border-box-border bg-box-bg text-heading-3 space-y-5"
+  >
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div>
+        <label for="contact-name" class="block text-sm font-semibold mb-1">Name *</label>
+        <input
+          type="text"
+          id="contact-name"
+          name="name"
+          required
+          placeholder="Max Mustermann"
+          class="w-full py-3 px-4 rounded-lg border border-box-border bg-transparent outline-none focus:border-primary transition-colors"
+        />
+      </div>
+      <div>
+        <label for="contact-phone" class="block text-sm font-semibold mb-1">Telefon</label>
+        <input
+          type="tel"
+          id="contact-phone"
+          name="phone"
+          placeholder="0 24 52 / ..."
+          class="w-full py-3 px-4 rounded-lg border border-box-border bg-transparent outline-none focus:border-primary transition-colors"
+        />
+      </div>
+    </div>
+
+    <div>
+      <label for="contact-email" class="block text-sm font-semibold mb-1">E-Mail *</label>
       <input
         type="email"
-        name=""
-        id=""
-        placeholder="johndoe@gmail.com"
-        class="w-full py-3 outline-none bg-transparent"
+        id="contact-email"
+        name="email"
+        required
+        placeholder="ihre@email.de"
+        class="w-full py-3 px-4 rounded-lg border border-box-border bg-transparent outline-none focus:border-primary transition-colors"
       />
-      <Button
-        color="cta"
-        variant="solid"
-        className={"min-w-max  !rounded-full"}
+    </div>
+
+    <div>
+      <label for="contact-subject" class="block text-sm font-semibold mb-1">Anliegen</label>
+      <select
+        id="contact-subject"
+        name="subject"
+        class="w-full py-3 px-4 rounded-lg border border-box-border bg-transparent outline-none focus:border-primary transition-colors"
       >
-        <span class="hidden sm:flex relative z-[5]"> Get Started </span>
-        <span class="flex sm:hidden relative z-[5]">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-5 h-5"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-            ></path>
-          </svg>
-        </span>
-      </Button>
-    </form>
-  </div>
+        <option value="">Bitte wählen...</option>
+        <option value="beratung">Beratungstermin vereinbaren</option>
+        <option value="waermepumpe">Wärmepumpe</option>
+        <option value="gasheizung">Gas-Brennwert</option>
+        <option value="oelheizung">Öl-Brennwert</option>
+        <option value="solar">Solarthermie</option>
+        <option value="brennstoffzelle">Brennstoffzelle</option>
+        <option value="sanitaer">Sanitär & Bad</option>
+        <option value="foerderung">Förderung & Finanzierung</option>
+        <option value="wartung">Wartung & Service</option>
+        <option value="sonstiges">Sonstiges</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="contact-message" class="block text-sm font-semibold mb-1">Nachricht *</label>
+      <textarea
+        id="contact-message"
+        name="message"
+        required
+        rows="4"
+        placeholder="Beschreiben Sie kurz Ihr Anliegen..."
+        class="w-full py-3 px-4 rounded-lg border border-box-border bg-transparent outline-none focus:border-primary transition-colors resize-y"
+      ></textarea>
+    </div>
+
+    <div class="flex items-start gap-2">
+      <input
+        type="checkbox"
+        id="contact-privacy"
+        name="privacy"
+        required
+        class="mt-1 accent-primary"
+      />
+      <label for="contact-privacy" class="text-sm">
+        Ich habe die <a href="/datenschutz" class="text-primary underline">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+      </label>
+    </div>
+
+    <div class="flex justify-center">
+      <button
+        type="submit"
+        class="px-8 py-3 rounded-lg bg-primary text-accent-light font-semibold hover:bg-primary-700 active:bg-primary-800 transition-colors duration-300"
+      >
+        Nachricht senden
+      </button>
+    </div>
+
+    <div id="form-success" class="hidden text-center p-4 rounded-lg bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300">
+      Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns schnellstmöglich bei Ihnen.
+    </div>
+  </form>
 </div>
+
+<script>
+  const form = document.getElementById("contact-form") as HTMLFormElement;
+  const success = document.getElementById("form-success");
+
+  if (form && success) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      // In production, replace with actual form submission (e.g. Formspree, Netlify Forms, or custom API)
+      success.classList.remove("hidden");
+      form.reset();
+      setTimeout(() => {
+        success.classList.add("hidden");
+      }, 5000);
+    });
+  }
+</script>

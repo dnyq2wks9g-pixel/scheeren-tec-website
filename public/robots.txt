@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scheeren-tec.de/sitemap-index.xml
