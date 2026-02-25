@@ -1,0 +1,198 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/shared/Container.astro";
+import Title2 from "../components/shared/Title2.astro";
+import Paragraph from "../components/shared/Paragraph.astro";
+---
+
+<Layout title="Kontakt – Scheeren Tec GmbH">
+  <main class="pt-32 pb-20">
+    <Container>
+      <div class="text-center mb-16">
+        <Title2>Kontakt</Title2>
+        <h1 class="text-3xl md:text-4xl font-bold text-primary dark:text-white mt-4">
+          Wir freuen uns auf Ihre Nachricht
+        </h1>
+        <Paragraph className="mt-4 max-w-2xl mx-auto text-heading-3">
+          Haben Sie Fragen zu unseren Leistungen oder möchten Sie einen Beratungstermin vereinbaren?
+          Kontaktieren Sie uns – wir sind gerne für Sie da.
+        </Paragraph>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <!-- Kontaktformular -->
+        <div class="order-2 lg:order-1">
+          <h2 class="text-2xl font-bold text-primary dark:text-white mb-6">
+            Nachricht senden
+          </h2>
+          <form action="#" class="space-y-5">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="name" class="block text-sm font-medium mb-2">Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Ihr Name"
+                  class="w-full px-4 py-3 rounded-lg border border-box-border bg-box-bg text-accent dark:text-accent-light outline-none focus:border-primary transition-colors"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium mb-2">E-Mail *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="ihre@email.de"
+                  class="w-full px-4 py-3 rounded-lg border border-box-border bg-box-bg text-accent dark:text-accent-light outline-none focus:border-primary transition-colors"
+                />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="telefon" class="block text-sm font-medium mb-2">Telefon</label>
+                <input
+                  type="tel"
+                  id="telefon"
+                  name="telefon"
+                  placeholder="Ihre Telefonnummer"
+                  class="w-full px-4 py-3 rounded-lg border border-box-border bg-box-bg text-accent dark:text-accent-light outline-none focus:border-primary transition-colors"
+                />
+              </div>
+              <div>
+                <label for="betreff" class="block text-sm font-medium mb-2">Betreff</label>
+                <input
+                  type="text"
+                  id="betreff"
+                  name="betreff"
+                  placeholder="Worum geht es?"
+                  class="w-full px-4 py-3 rounded-lg border border-box-border bg-box-bg text-accent dark:text-accent-light outline-none focus:border-primary transition-colors"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="nachricht" class="block text-sm font-medium mb-2">Nachricht *</label>
+              <textarea
+                id="nachricht"
+                name="nachricht"
+                required
+                rows="5"
+                placeholder="Ihre Nachricht an uns..."
+                class="w-full px-4 py-3 rounded-lg border border-box-border bg-box-bg text-accent dark:text-accent-light outline-none focus:border-primary transition-colors resize-vertical"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full sm:w-auto px-8 py-3 bg-cta border border-cta hover:border-cta-800 text-accent font-medium rounded-lg duration-300 ease-linear"
+            >
+              Nachricht absenden
+            </button>
+          </form>
+        </div>
+
+        <!-- Kontaktdaten -->
+        <div class="order-1 lg:order-2">
+          <h2 class="text-2xl font-bold text-primary dark:text-white mb-6">
+            Unsere Kontaktdaten
+          </h2>
+          <div class="space-y-6">
+            <!-- Adresse -->
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-primary dark:text-white">Adresse</h3>
+                <Paragraph>
+                  Scheeren Tec GmbH<br />
+                  Kirchstraße 4<br />
+                  52525 Heinsberg
+                </Paragraph>
+              </div>
+            </div>
+
+            <!-- Telefon -->
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-primary dark:text-white">Telefon</h3>
+                <Paragraph>
+                  <a href="tel:+4924528604356" class="hover:text-cta transition-colors">0 24 52 / 8 60 43 56</a>
+                </Paragraph>
+                <Paragraph>
+                  <a href="tel:+491743213493" class="hover:text-cta transition-colors">Mobil: 0174 / 3 21 34 93</a>
+                </Paragraph>
+              </div>
+            </div>
+
+            <!-- E-Mail -->
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-primary dark:text-white">E-Mail</h3>
+                <Paragraph>
+                  <a href="mailto:info@scheeren-tec.de" class="hover:text-cta transition-colors">info@scheeren-tec.de</a>
+                </Paragraph>
+              </div>
+            </div>
+
+            <!-- Öffnungszeiten -->
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-primary dark:text-white">Öffnungszeiten</h3>
+                <Paragraph>Mo – Fr: 08:00 – 17:00 Uhr</Paragraph>
+                <Paragraph>Sa & So: nach Vereinbarung</Paragraph>
+              </div>
+            </div>
+
+            <!-- Zertifizierungen -->
+            <div class="mt-8 p-6 bg-primary/5 dark:bg-primary/10 rounded-xl border border-primary/10">
+              <h3 class="font-semibold text-primary dark:text-white mb-3">Zertifizierungen</h3>
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-cta">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Vaillant Fachpartner</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-cta">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Gepr. Gebäudeenergieberater (HWK)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-cta">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>HRB 24600 – AG Aachen</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>
